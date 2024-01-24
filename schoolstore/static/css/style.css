@@ -1,0 +1,114 @@
+form {
+  border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+}
+.form-box{
+    padding: 16px;
+}
+.body-add{
+	margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+	background:url(https://img.freepik.com/free-photo/set-school-supplies_23-2147846265.jpg?w=740&t=st=1706008615~exp=1706009215~hmac=6300fbbb1c02af24dd6e50317ae017b33d60f1d6ea1ff1605a2c653c9981d8d2s) ;
+    background-size: 1500px 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 60px
+}
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:505px;
+	min-height:600px;
+	position:relative;
+	background:url(https://wallpapercave.com/wp/wp7164389.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.header-t{
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.header-text{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+footer {
+   position: fixed;
+   bottom: 0;
+   width: auto;
+   height: 40px;   /* Height of the footer */
+   background: #6cf;
+}
+.imgback{
+    margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+    background-size: 150000px 80000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.my_footer p{
+    padding-top:20px;
+    font-size: 14px;
+}
+.index-wrap{
+	width:100%;
+	margin:auto;
+	max-width:auto;
+	min-height:600px;
+	position:relative;
+	background:url(https://wallpapercave.com/wp/wp7164389.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.header-text-index{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+.containers {
+  padding:20%;
+  width:auto;
+  height:auto;
+}
+.button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 100%;
+    font-size: 16px;
+}
+.add{
+    margin:0;
+	color:#6a6f8c;
+	background:#f3f3f3;
+	font:600 16px/18px 'Open Sans',sans-serif;
+    background-size: 1500px 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 60px
+}

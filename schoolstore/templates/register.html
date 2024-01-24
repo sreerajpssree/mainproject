@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" action="{% url 'school:register' %}">
+    {% csrf_token %}
+    <div class="login-wrap">
+        <div class="header-text">
+            <h2 class="header-t"><b>Register</b></h2>
+            <input type="text" name="username" placeholder="Enter your username"><br>
+            <input type="password" name="password" placeholder="Enter your password"><br>
+            <input type="password" name="password1" placeholder="Confirm password"><br>
+            <button class="button" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+{% for msg in messages %}
+    {{msg}}
+{% endfor %}
+{% endblock %}
+

@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark vh-100">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            School store
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <p class="nav-link">Hello {{user.username}}</p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'school:logout' %}">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'school:login' %}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'school:register' %}">Register</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Departments
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="Departments">
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/w/index.php?search=medical+department&title=Special%3ASearch&ns0=1">Medical</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Commerce">Commerce</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Management">Management</a>
+                            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/History">History</a>
+                        </div>
+                    </div>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
